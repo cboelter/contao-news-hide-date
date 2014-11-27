@@ -11,5 +11,6 @@
  * @license    LGPL-3.0+
  */
 
-// Hooks
-$GLOBALS['TL_HOOKS']['parseArticles'][] = array('NewsHideDate\Hook\ParseArticle', 'addHideDateToTemplate');
+// Fields
+$GLOBALS['TL_LANG']['tl_news']['hidedate'] = array('Datum nicht anzeigen', 'Die Anzeige des Datums deaktivieren,
+erfordert Template-Anpassung');

@@ -1,17 +1,28 @@
 <?php
 
+/**
+ * NewsHideDate
+ *
+ * PHP Version 5.3
+ *
+ * @copyright  Christopher Bölter 2014
+ * @author     Christopher Bölter <github@boelter.eu>
+ * @package    contao-news-hide-date
+ * @license    LGPL-3.0+
+ */
+
 namespace NewsHideDate\Hook;
 
 /**
- * Handle the parseArticle-Hook.
+ * Parse the news article.
  *
- * @package NewsTop
+ * @package contao-news-hide-date
  */
 class ParseArticle
 {
 
     /**
-     * Handle the parseArticle-Hook and set the counter to the database and the template.
+     * Handle the parseArticle-Hook and add the hidedate vor to the template.
      *
      * @param object $objTemplate The current news template.
      * @param array  $arrArticle  The current article row.
