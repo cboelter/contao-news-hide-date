@@ -1,0 +1,59 @@
+{
+	"name": "cboelter/contao-news-hide-date",
+	"description": "Contao news hide date",
+	"keywords": ["contao", "news", "hide date", "date"],
+	"type": "contao-module",
+	"homepage": "http://boelter.eu",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Christopher Bölter",
+			"email": "contao@boelter.eu",
+			"homepage": "http://boelter.eu",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "contao@boelter.eu",
+		"issues": "https://github.com/cboelter/contao-news-hide-date/issues",
+		"source": "https://github.com/cboelter/contao-news-hide-date"
+	},
+	"require": {
+		"php": ">=5.3",
+		"contao/core": ">=3.2,<4.0",
+		"contao-community-alliance/composer-plugin": "~2.0"
+	},
+	"require-dev": {
+		"cyberspectrum/contao-toolbox": "dev-master",
+		"cboelter/contao-ccabs-custom": "~1.0",
+		"contao-community-alliance/build-system": "~1.0",
+		"contao-community-alliance/build-system-all-tasks": "~1.0",
+		"contao-community-alliance/coding-standard": "~1.0"
+	},
+	"conflict": {
+		"contao/core": "3.0.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"NewsTop": "src"
+		}
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/cboelter/contao-ccabs-custom"
+		}
+	],
+	"extra": {
+		"contao": {
+			"sources": {
+				"contao": "system/modules/news-hide-date"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}
